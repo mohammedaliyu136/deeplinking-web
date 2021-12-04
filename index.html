@@ -1,0 +1,22 @@
+I am trying to open an installed android mobile application via html page in Chrome browser through javascript or jQuery click function.
+
+It seems an anchor tag tap is working fine and opening an installed app but it's not allowing when I am trying to open an app with javascript click function, href is same still it's not working.
+
+Here is the code:
+
+<!doctype html>
+<html>
+<head>  
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <a id="openApp" href="intent://adjustify/#Intent;scheme=https;package=com.adjustify.android;end">click me 65</a>
+</body>
+    <script>
+        $(document).ready(function(){
+            setTimeout(function(){
+                document.getElementById('openApp').click();
+            }, 2000);
+        });
+    </script>
+</html>
